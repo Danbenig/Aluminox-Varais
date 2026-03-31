@@ -215,6 +215,7 @@ body {
   font-family: var(--font-family--satoshi);
   color: var(--color--font-color);
   font-size: var(--text-size--regular);
+  ---mode--collection-f31cc72e-0298-39d3-4438-4fb1ea27350c: mode-fa64e5a5-77d9-6cab-d007-79546dbe7601;
   line-height: 1.5;
 }
 
@@ -2330,6 +2331,7 @@ img {
 .btn-primary {
   color: #010101;
   text-align: center;
+  ---mode--collection-f31cc72e-0298-39d3-4438-4fb1ea27350c: mode-fa64e5a5-77d9-6cab-d007-79546dbe7601;
   background-color: #fff;
   border-radius: 100px;
   flex-flow: column;
@@ -2338,6 +2340,7 @@ img {
   padding: 12px 26px;
   text-decoration: none;
   transition: letter-spacing .4s, background-color .4s, color .4s;
+  display: none;
 }
 
 .btn-primary:hover {
@@ -2773,6 +2776,10 @@ img {
 }
 
 @media screen and (min-width: 1440px) {
+  .btn-primary {
+    display: none;
+  }
+
   .section-overlay {
     border-radius: 20px;
   }
@@ -3196,6 +3203,12 @@ img {
     grid-row-gap: 30px;
   }
 
+  .btn-primary {
+    ---mode--collection-f31cc72e-0298-39d3-4438-4fb1ea27350c: mode-4ba40b39-2386-3c78-8c39-935ad91595e6;
+    background-color: #25d366;
+    display: block;
+  }
+
   .solution-wrap {
     grid-template-columns: 1fr 1fr;
     padding-top: 64px;
@@ -3545,6 +3558,10 @@ img {
     align-items: flex-start;
   }
 
+  .btn-primary {
+    display: block;
+  }
+
   .solution-wrap {
     grid-template-columns: 1fr;
   }
@@ -3623,6 +3640,10 @@ img {
 }
 
 @media screen and (max-width: 479px) {
+  body {
+    ---mode--collection-f31cc72e-0298-39d3-4438-4fb1ea27350c: mode-4ba40b39-2386-3c78-8c39-935ad91595e6;
+  }
+
   .heading-2 {
     font-size: 2.8rem;
   }
@@ -3753,6 +3774,11 @@ img {
   .content {
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
+  }
+
+  .sticky-small-image {
+    width: 15rem;
+    height: 15rem;
   }
 
   .products-wrapper {
@@ -3888,6 +3914,13 @@ img {
   .solution-area {
     margin-left: 5px;
     margin-right: 5px;
+  }
+
+  .btn-primary {
+    ---mode--collection-f31cc72e-0298-39d3-4438-4fb1ea27350c: mode-4ba40b39-2386-3c78-8c39-935ad91595e6;
+    background-color: #25d366;
+    border-radius: 1rem;
+    display: block;
   }
 
   .solution-wrap {
