@@ -1097,6 +1097,16 @@ img {
   max-width: 15rem;
   display: flex;
   overflow: hidden;
+  opacity: 1 !important;
+}
+
+.tag-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  transform: translate3d(0, 0, 0);
+  animation: tag-marquee-track 16s linear infinite;
+  will-change: transform;
 }
 
 .tag {
@@ -1104,6 +1114,16 @@ img {
   grid-row-gap: .6rem;
   align-items: center;
   display: flex;
+  flex-shrink: 0;
+}
+
+@keyframes tag-marquee-track {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .elipse {
